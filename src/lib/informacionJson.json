@@ -1,0 +1,69 @@
+[{
+  "informacion_personal": {
+    "nombre": "Daniel",
+    "apellido": "Cardenas",
+    "edad": 32,
+    "genero": "Masculino",
+    "ciudad": "Bogotá",
+    "direccion": {
+      "calle": "Calle Principal",
+      "numero": "123",
+      "codigo_postal": "12345"
+    }
+  },
+  "educacion": [
+    {
+      "nivel_educativo": "Licenciatura en Informática",
+      "institucion": "Universidad XYZ",
+      "anio_graduacion": 2020
+    },
+    {
+      "nivel_educativo": "Maestría en Ciencias de la Computación",
+      "institucion": "Universidad ABC",
+      "anio_graduacion": 2022
+    },
+    {
+      "nivel_educativo": "Diplomado en Desarrollo Web",
+      "institucion": "Instituto 123",
+      "anio_graduacion": 2018
+    }
+  ],
+  "ocupacion": {
+    "titulo": "Desarrollador de Software",
+    "empresa": "Empresa ABC",
+    "experiencia_laboral": [
+      {
+        "puesto": "Desarrollador Junior",
+        "periodo": "2018-2020"
+      },
+      {
+        "puesto": "Desarrollador Senior",
+        "periodo": "2020-presente"
+      }
+    ]
+  },
+  "intereses": ["Programación", "Viajes", "Fotografía"],
+  "redes_sociales": {
+    "twitter": "tucuenta",
+    "instagram": "tucuenta"
+  },
+  "contacto": {
+    "email": "tucorreo@example.com",
+    "telefono": "123-456-7890"
+  },
+  "portafolio": [
+    {
+      "proyecto": "Sistema de Gestión de Tareas",
+      "descripcion": "Una aplicación web para gestionar y seguir el progreso de las tareas.",
+      "enlace": "https://tuproyecto1.com",
+      "imagen": "url_imagen_proyecto1.jpg"
+    },
+    {
+      "proyecto": "Blog Personal",
+      "descripcion": "Un blog interactivo donde comparto experiencias y conocimientos.",
+      "enlace": "https://tuproyecto2.com",
+      "imagen": "url_imagen_proyecto2.jpg"
+    }
+  ]
+}
+]
