@@ -1,5 +1,10 @@
 ---
 import information from '../lib/informacionJson.json'
+import ButtonAside from '../components/ButtonAside.astro'
+import Github from '../icons/Github.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
+import { Image } from 'astro:assets'
+import myImage from '../icons/Images/avatarPerfil.png'
 
 interface Props {
 	title: string;
@@ -9,43 +14,44 @@ interface Props {
 
 const { href, title, body } = Astro.props;
 ---
-
-<li class="link-card">
-	<h2 class="text-white">
-        Welcome
-    </h2>
-    <p
-   
-
-    >
-    {
-        href
-    }
-        Hi, I'm a web developer from the UK. I'm currently working at <a href="http://www.3squared.com">3Squared</a> in Sheffield.
-
-    </p>
-    <h1>
-        {information.map((info) => info.informacion_personal?.apellido)}
-        
+<main class="flex justify-between w-full ">
+    <aside class="flex flex-col justify-between p-5 gap-20">
+        <section class="flex flex-col gap-4 ">
+        <h1 class="text-white font-extrabold text-2xl" >
+            Welcome to my Portfolio
         </h1>
-    <div class="icons ">
-        <button >Git Hub</button>
-        <button>Twitter</button>
-        <button>LinkedIn</button>
+        {information.map((info) => (
+            <p class="text-white text-xl"> My name is
+
+              <strong class="text-pink-500">{info.informacion_personal?.nombre} {info.informacion_personal?.apellido}</strong>
+            </p>
+          ))}
+        <p class="text-white text-xl">
+            I'm a software developer with a passion for learning and teaching.
+        </p>
+        </section>
+        <section class="">
+            <ul class="flex gap-10">
+                <ButtonAside href="www.github.com/darcardenasp045">
+                    <Github/>
+                </ButtonAside>
+
+                <ButtonAside href="www.linkedin.com">
+                    <LinkedIn/>
+                </ButtonAside>
+
+                
+            </ul>
+       
+    </aside>
+    <aside>
+        <picture>
+            <Image width={300} src={myImage} alt="Foto de perfil de Daniel Cardenas"/>
+        </picture>
+    </aside>
+
+</main>
 
 
-    </div>
-</li>
-<style>
+        
 
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-
-</style>
