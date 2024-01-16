@@ -1,10 +1,17 @@
-
-
+---
+import information from '../lib/informacionJson.json'
+import Profile from '../components/Profile.astro'
+---
 
 <li class="link-card">
 	<menu>
-		<h2>
+		<section>
+			
 			<slot/>
+		</section>
+		
+		<h2>
+			
 		</h2>
 	</menu>
 
@@ -34,38 +41,6 @@
 		font-size: 1.25rem;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
-	
-	h2 {
-		border: none;
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-	.link-card:hover {
-		background-position: 0%;
-	}
-	.link-card:hover > a {
-		color: #fff;
-	}
-	.link-card:hover h2 {
-		color: #fff;
-	}
-	.link-card:hover p {
-		color: #fff;
-	}
-	.link-card:hover {
-		box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
-			0 0 32px rgba(255, 255, 255, 0.1);
-	}
-	.link-card:hover > a {
-		box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
-			0 0 32px rgba(255, 255, 255, 0.1);
-	}
 
-	
 	
 </style>

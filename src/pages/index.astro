@@ -2,26 +2,38 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Profile from '../components/Profile.astro';
+import information from '../lib/informacionJson.json'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Portfolio">
 	<main class="flex flex-row justify-center m-10">
 		<div class="container ">
 			<main class="profile">
 				<Card>
-					<Profile />
+					<Profile href={information.map((info) => info.informacion_personal?.ciudad)} >
 				</Card>
-
 			</main>
 			<aside class="AboutMe w-full h-full">
 				<Card/>
 			</aside>
-			<article class="Proyects w-full h-full"><Card/></article>
-			<aside class="Contact w-full h-full"><Card/></aside>
-			<main class="Blog w-full h-full"><Card/></main>
-			<section class="Now w-full h-full"><Card/></section>
-			<footer class="createdby w-full h-full"><Card/></footer>
-			<section class="Cities "><Card/></section>
+			<article class="Proyects w-full h-full">
+				<Card/>
+			</article>
+			<aside class="Contact w-full h-full">
+				<Card/>
+			</aside>
+			<main class="Blog w-full h-full">
+				<Card/>
+			</main>
+			<section class="Now w-full h-full">
+				<Card/>
+			</section>
+			<footer class="createdby w-full h-full">
+				<Card/>
+				</footer>
+			<section class="Cities ">
+				<Card/>
+			</section>
 		  </div>
 	</main>
 </Layout>

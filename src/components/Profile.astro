@@ -1,11 +1,33 @@
+---
+import information from '../lib/informacionJson.json'
+
+interface Props {
+	title: string;
+	body: string;
+	href?: any;
+}
+
+const { href, title, body } = Astro.props;
+---
+
 <li class="link-card">
 	<h2 class="text-white">
         Welcome
     </h2>
-    <p>
+    <p
+   
+
+    >
+    {
+        href
+    }
         Hi, I'm a web developer from the UK. I'm currently working at <a href="http://www.3squared.com">3Squared</a> in Sheffield.
 
     </p>
+    <h1>
+        {information.map((info) => info.informacion_personal?.apellido)}
+        
+        </h1>
     <div class="icons ">
         <button >Git Hub</button>
         <button>Twitter</button>
@@ -14,3 +36,16 @@
 
     </div>
 </li>
+<style>
+
+	h2 {
+		margin: 0;
+		font-size: 1.25rem;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+	p {
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+	}
+
+</style>
