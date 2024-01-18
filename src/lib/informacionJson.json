@@ -11,6 +11,13 @@
       "codigo_postal": "12345"
     }
   },
+  "aboutMe":{
+    "descipcion1":"Hey there! 👋 I'm Daniel, a programming enthusiast and avid reader. I find joy in crafting creative solutions through code and exploring new technologies.  My greatest source of inspiration and happiness comes from spending quality time with my beloved family.",
+    "descipcion2":"When I'm not immersed in the world of programming, you'll find me lost in the pages of a good book.",
+    "descripcion3":"I firmly believe in nurturing strong relationships and the power of sharing special moments together.",
+    "descripcion4":" I'm always eager to learn something new and enhance my skills.",
+    "descripcion5":"Let's connect and explore the fascinating realms of technology and creativity together!"
+  },
   "educacion": [
     {
       "nivel_educativo": "Licenciatura en Informática",

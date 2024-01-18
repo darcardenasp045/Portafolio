@@ -2,8 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Profile from '../components/Profile.astro';
+import AboutMe from '../components/AboutMe.astro';
 
-import { fade } from 'astro:transitions';
 ---
 
 <Layout title="Portfolio">
@@ -19,7 +19,9 @@ import { fade } from 'astro:transitions';
 				</Card>
 			</main>
 			<aside class="AboutMe w-full h-full animate-fade-up animate-duration-1000 animate-delay-[900ms]  ">
-				<Card/>
+				<Card>
+					<AboutMe/>
+				</Card>
 			</aside>
 			<article class="Proyects w-full h-full animate-fade-up animate-duration-1000 animate-delay-[1200ms] ">
 				<Card/>

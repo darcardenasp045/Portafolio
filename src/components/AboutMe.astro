@@ -1,0 +1,12 @@
+---
+import information from '../lib/informacionJson.json'
+---
+
+<aside class="max-w-xs overflow-hidden overflow-ellipsis ">
+    <h1 class="text-white font-extrabold text-2xl p-2">About Me</h1>
+    {information.map((info) => (
+        <p class="text-white p-2 line-clamp-7 leading-loose"> 
+            {info.aboutMe?.descipcion1}        
+        </p>
+      ))}
+</aside>
