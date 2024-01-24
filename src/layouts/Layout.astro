@@ -22,7 +22,10 @@ import '@fontsource-variable/lexend';
 		
 	</head>
 	<body>
-		<slot />
+		<main class="flex justify-center items-center w-full h-full ">
+			<slot />
+		</main>
+		
 	</body>
 </html>
 <style is:global>
@@ -35,8 +38,10 @@ import '@fontsource-variable/lexend';
 			rgb(var(--accent)),
 			rgb(var(--accent-light)) 30%,
 			white 60%
+		
 		);
 	}
+
 	
 	html {
 		font-family: 'Lexend Variable', sans-serif;
@@ -54,4 +59,5 @@ import '@fontsource-variable/lexend';
 			Courier New,
 			monospace;
 	}
+
 </style>
