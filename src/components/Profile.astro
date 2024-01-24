@@ -5,6 +5,7 @@ import Github from '../icons/Github.astro'
 import LinkedIn from '../icons/LinkedIn.astro'
 import { Image } from 'astro:assets'
 import myImage from '../icons/Images/avatarPerfil.png'
+import { LINKS } from '../lib/constanst'
 
 ---
 <main class="flex justify-between w-full  ">
@@ -25,11 +26,11 @@ import myImage from '../icons/Images/avatarPerfil.png'
         </section>
         <section class="">
             <ul class="flex gap-10">
-                <ButtonAside href="www.github.com/darcardenasp045">
+                <ButtonAside href={LINKS.github}>
                     <Github/>
                 </ButtonAside>
 
-                <ButtonAside href="www.linkedin.com">
+                <ButtonAside href={LINKS.linkedin}>
                     <LinkedIn/>
                 </ButtonAside>
 

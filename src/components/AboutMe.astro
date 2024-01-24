@@ -3,10 +3,19 @@ import information from '../lib/informacionJson.json'
 ---
 
 <aside class="max-w-xs overflow-hidden overflow-ellipsis ">
-    <h1 class="text-white font-extrabold text-2xl p-2">About Me</h1>
+    <h1 class="text-white font-ligth text-xl p-2">About Me</h1>
     {information.map((info) => (
-        <p class="text-white p-2 line-clamp-7 leading-loose"> 
+        <p class="text-white text-sm font-light p-2 line-clamp-7 leading-loose"> 
             {info.aboutMe?.descipcion1}        
         </p>
-      ))}
+        <p class="text-white text-sm font-light p-2">My primary tools of choice includes:</p>
+        <ul class="text-white text-sm font-light P-2 m-3 list-disc list-inside">
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Astro</li>
+            <li>Nodejs</li>
+        </ul>
+        <p class="text-white text-sm font-light p-2">My goal is to find the right solution for each project.</p>
+
+        ))}
 </aside>

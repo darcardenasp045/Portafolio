@@ -3,10 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Profile from '../components/Profile.astro';
 import AboutMe from '../components/AboutMe.astro';
+import Proyects from '../components/Proyects.astro';
 
 ---
 
-<Layout title="Portfolio">
+<Layout 
+	title="Daniel Cardenas - Frontend Developer"
+	description="Software developer with focus on the user experience animations and micro interactions"
+>
 	<main class="flex flex-row justify-center m-10">
 		<div class={`container
 			
@@ -23,8 +27,13 @@ import AboutMe from '../components/AboutMe.astro';
 					<AboutMe/>
 				</Card>
 			</aside>
-			<article class="Proyects w-full h-full animate-fade-up animate-duration-1000 animate-delay-[1200ms] ">
-				<Card/>
+			<article class="Proyects w-full h-full animate-fade-up animate-duration-1000 animate-delay-[1200ms] flex justify-center ">
+				<Card>
+					<Proyects/>
+				</Card>
+				
+
+				
 			</article>
 			<aside class="Contact w-full h-full animate-fade-up animate-duration-1000 animate-delay-[1100ms] ">
 				<Card/>
