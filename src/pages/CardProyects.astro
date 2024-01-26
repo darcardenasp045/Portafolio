@@ -1,0 +1,36 @@
+---
+interface Props{
+    proyecto: string
+    descripcion:string
+    enlace:string
+    imagen:string
+
+}
+
+const {proyecto,descripcion ,enlace, imagen} = Astro.props
+
+---
+
+<a href={enlace}
+    class=" justify-center rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:scale-105 hover:border-gray-500  h-fit transition flex flex-col p-4"
+>
+    <picture class=" flex justify-center p-4 ">
+        <img class="mb-5 rounded-lg w-52 h-50" src={imagen} alt={`Este proyecto es  ${proyecto}`}>
+    </picture>
+
+    <header class=" p4- flex-grow flex items-center flex-col">
+        <span>
+            {imagen}
+        </span>
+
+        <h2 class="my-2 text-2xl font-bold tracking-tight text-white">
+            Nombre: {descripcion}
+        </h2>
+        <p>
+            Id del pokemon: {proyecto}
+        </p>
+     
+        
+    </header>
+
+</a>

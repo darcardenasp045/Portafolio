@@ -1,15 +1,26 @@
 ---
+import CardProyects from './CardProyects.astro';
 import Layout from '../layouts/Layout.astro';
+import information from '../lib/informacionJson.json'
+import
 ---
 <Layout 
     title="Daniel Cardenas - Frontend Developer"
 	description="Software developer with focus on the user experience animations and micro interactions">
-    <main>
+    <main class="w-full h-full relative flex justify-center items-center">
         
-    <h1 class="text-3xl text-white">
-        En construccion
-    </h1>
-
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {information.map((info)=>(
+                info.portafolio.map((port)=>(
+                <CardProyects
+                  proyecto={port.proyecto}
+                  descripcion ={port.descripcion}
+                  enlace={port.enlace}
+                  imagen={port.imagen}
+                />
+                ))
+            ))}
+          </div>
     </main>
 
 </Layout>
