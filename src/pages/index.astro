@@ -4,7 +4,9 @@ import Card from '../components/Card.astro';
 import Profile from '../components/Profile.astro';
 import AboutMe from '../components/AboutMe.astro';
 import Proyects from '../components/Proyects.astro';
-
+import ContactCard from '../components/ContactCard.astro';
+import Love from '../components/Love.astro';
+import Blog from '../components/Blog.astro';
 ---
 
 <Layout 
@@ -32,24 +34,24 @@ import Proyects from '../components/Proyects.astro';
 					<Proyects/>
 				</Card>
 				
-
-				
 			</article>
 			<aside class="Contact w-full h-full animate-fade-up animate-duration-1000 animate-delay-[1100ms] ">
-				<Card/>
+				<Card>
+					<ContactCard/>
+				</Card>
 			</aside>
 			<main class="Blog w-full h-full animate-fade-up animate-duration-1000 animate-delay-[1200ms]">
-				<Card/>
+				<Card>
+					<Blog/>
+				</Card>
 			</main>
-			<section class="Now w-full h-full animate-fade-up animate-duration-1000 animate-delay-[1150ms] ">
-				<Card/>
-			</section>
+		
 			<footer class="createdby w-full h-full animate-fade-up animate-duration-1000 animate-delay-[1300ms] ">
-				<Card/>
-				</footer>
-			<section class="Cities animate-fade-up animate-duration-1000 animate-delay-[1250ms] ">
-				<Card/>
-			</section>
+				<Card>
+					<Love/>
+				</Card>
+			</footer>
+			
 		  </div>
 	</main>
 </Layout>
@@ -68,8 +70,8 @@ import Proyects from '../components/Proyects.astro';
 		grid-template-areas:
 			"profile profile profile AboutMe"
 			"Contact Proyects Proyects AboutMe"
-			"Contact Blog Cities Now"
-			"Contact Blog createdby Now";
+			"Contact Blog createdby AboutMe"
+			"Contact Blog createdby AboutMe";
 }
 
 .profile { 

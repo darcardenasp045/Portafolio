@@ -2,14 +2,18 @@
 import CardProyects from './CardProyects.astro';
 import Layout from '../layouts/Layout.astro';
 import information from '../lib/informacionJson.json'
+import { LINKS } from '../lib/constanst'
+
 
 ---
 <Layout 
-    title="Daniel Cardenas - Frontend Developer"
-	description="Software developer with focus on the user experience animations and micro interactions">
-    <main class="w-full h-full relative flex justify-center items-center">
+    title="Proyects - Daniel Cardenas "
+	description="All proyects">
+    <main class="w-full h-full relative flex justify-center flex-col items-center">
         
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+       
+        <div class="grid p-24 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            
             {information.map((info)=>(
                 info.portafolio.map((port)=>(
                 <CardProyects

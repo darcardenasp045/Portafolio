@@ -55,10 +55,22 @@
     "instagram": "tucuenta"
   },
   "contacto": {
-    "email": "tucorreo@example.com",
-    "telefono": "123-456-7890"
+    "email": "darcardenasp@gmail.com",
+    "telefono": "+57 316 870 50 47"
   },
   "portafolio": [
+    {
+      "proyecto": "Splendid Makeup",
+      "descripcion": "Un sitio web de venta de maquillaje, donde te puedes registrar y comprar productos. ademas tienes la posibilidad de ver los productos en detalle, tener la opcion de un blog donde pudes ver tutoriales de maquillaje. Y referencias de los productos.",
+      "enlace": "https://splendid-makeup.vercel.app",
+      "imagen":"https://img.freepik.com/foto-gratis/resumen-bombilla-creativa-sobre-fondo-azul-brillante-ia-generativa_188544-8090.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1706486400&semt=sph"
+    },
+    {
+      "proyecto": "Blog Personal",
+      "descripcion": "Un blog interactivo donde comparto experiencias y conocimientos.",
+      "enlace": "https://tuproyecto2.com",
+      "imagen": "../icons/Images/"
+    },
     {
       "proyecto": "Sistema de Gestión de Tareas",
       "descripcion": "Una aplicación web para gestionar y seguir el progreso de las tareas.",

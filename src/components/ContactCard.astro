@@ -1,0 +1,49 @@
+---
+import { LINKS } from '../lib/constanst'
+import information from '../lib/informacionJson.json'
+---
+
+<aside class="max-w-xs overflow-hidden overflow-ellipsis ">
+    <h1>Daniel Cardenas</h1>
+    <h1>Let`s start working together</h1>
+    
+    {information.map((info) => (
+        <a  class="text-white text-sm font-light p-2"
+            href={`mailto:${info.contacto?.email}`}>
+            {info.contacto?.email}
+        </a> <br/>
+        <a  class="text-white text-sm font-light p-2"
+            href={`tel:${info.contacto?.telefono}`}>
+            {info.contacto?.telefono}        
+        </a>    
+            
+       
+        <p class="text-white text-sm font-light p-2 ">Bogota, CO</p>
+        <p class="text-white text-sm font-light p-2">Socials</p>
+        <ul class="text-white text-sm font-light P-2 m-3 list-disc list-inside">
+            <li>
+                <a 
+                    href={LINKS.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >github</a>
+            </li>
+            <li>
+                <a 
+                    href={LINKS.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >linkedin</a>
+            </li>
+            <li>
+                <a 
+                    href={LINKS.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Twitter</a>
+            </li>
+               
+        </ul>
+      
+        ))}
+</aside>
