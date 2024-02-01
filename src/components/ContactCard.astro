@@ -3,24 +3,24 @@ import { LINKS } from '../lib/constanst'
 import information from '../lib/informacionJson.json'
 ---
 
-<aside class="max-w-xs overflow-hidden overflow-ellipsis ">
+<aside class="max-w-xs overflow-hidden overflow-ellipsis p-5">
     <h1>Daniel Cardenas</h1>
     <h1>Let`s start working together</h1>
     
     {information.map((info) => (
-        <a  class="text-white text-sm font-light p-2"
+        <a  class="text-white text-sm font-light pb-2 "
             href={`mailto:${info.contacto?.email}`}>
             {info.contacto?.email}
         </a> <br/>
-        <a  class="text-white text-sm font-light p-2"
+        <a  class="text-white text-sm font-light pb-2"
             href={`tel:${info.contacto?.telefono}`}>
             {info.contacto?.telefono}        
         </a>    
             
        
-        <p class="text-white text-sm font-light p-2 ">Bogota, CO</p>
-        <p class="text-white text-sm font-light p-2">Socials</p>
-        <ul class="text-white text-sm font-light P-2 m-3 list-disc list-inside">
+        <p class="text-white text-sm font-light pb-2 ">Bogota, CO</p>
+        <p class="text-white text-sm font-light pb-2">Socials</p>
+        <ul class="text-white text-sm font-light Pb-2 m-3 list-disc list-inside">
             <li>
                 <a 
                     href={LINKS.github}

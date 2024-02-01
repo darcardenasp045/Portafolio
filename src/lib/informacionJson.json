@@ -62,26 +62,14 @@
     {
       "proyecto": "Splendid Makeup",
       "descripcion": "Un sitio web de venta de maquillaje, donde te puedes registrar y comprar productos. ademas tienes la posibilidad de ver los productos en detalle, tener la opcion de un blog donde pudes ver tutoriales de maquillaje. Y referencias de los productos.",
-      "enlace": "https://splendid-makeup.vercel.app",
-      "imagen":"https://img.freepik.com/foto-gratis/resumen-bombilla-creativa-sobre-fondo-azul-brillante-ia-generativa_188544-8090.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1706486400&semt=sph"
+      "enlace": "https://github.com/darcardenasp045/splendidMakeup",
+      "imagen":"https://i.postimg.cc/pLSvnn2G/proyecto1.png"
     },
     {
-      "proyecto": "Blog Personal",
-      "descripcion": "Un blog interactivo donde comparto experiencias y conocimientos.",
-      "enlace": "https://tuproyecto2.com",
-      "imagen": "../icons/Images/"
-    },
-    {
-      "proyecto": "Sistema de Gestión de Tareas",
-      "descripcion": "Una aplicación web para gestionar y seguir el progreso de las tareas.",
-      "enlace": "https://tuproyecto1.com",
-      "imagen": "url_imagen_proyecto1.jpg"
-    },
-    {
-      "proyecto": "Blog Personal",
-      "descripcion": "Un blog interactivo donde comparto experiencias y conocimientos.",
-      "enlace": "https://tuproyecto2.com",
-      "imagen": "url_imagen_proyecto2.jpg"
+      "proyecto": "Pokedex",
+      "descripcion": "Una pokedex donde puedes ver los pokemones de la primera generacion, con sus respectivas caracteristicas y habilidades.",
+      "enlace": "https://github.com/darcardenasp045/pokedex",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDvFi6ShsvC6mtFS7EkCmBOKeAZftxAs_tg&usqp=CAU"
     }
   ]
 }
