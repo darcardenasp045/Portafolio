@@ -1,30 +1,25 @@
 ---
-import CardProyects from './CardProyects.astro';
+import ProyectosCardMenu from '../components/ProyectosCardMenu.astro';
 import Layout from '../layouts/Layout.astro';
-import information from '../lib/informacionJson.json'
+
 import { LINKS } from '../lib/constanst'
+import Card from '../components/Card.astro';
+import HeaderCardProyects from '../components/HeaderCardProyects.astro';
 
 
 ---
 <Layout 
     title="Proyects - Daniel Cardenas "
 	description="All proyects">
-    <main class="w-full h-full relative flex justify-center flex-col items-center">
+    <main class="cont">
+        <Card class="h-96">
+            <HeaderCardProyects/>
+        </Card>
+        <ProyectosCardMenu/>
+        
+        
 
-        <div class="grid p-24 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            
-            {information.map((info)=>(
-                info.portafolio.map((port)=>(
-                <CardProyects
-                    proyecto={port.proyecto}
-                    descripcion ={port.descripcion}
-                    enlace={port.enlace}
-                    imagen={port.imagen}
-                    date={port.date}
-                />
-                ))
-            ))}
-        </div>
+       
     </main>
 
     
@@ -36,6 +31,9 @@ import { LINKS } from '../lib/constanst'
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 50px;
+        position: absolute;
+        width: 80%;
+        height: 80vh;
+       
     }
 </style>

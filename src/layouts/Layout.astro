@@ -8,6 +8,7 @@ const { title, description } = Astro.props;
 
 // Supports weights 100-900
 import '@fontsource-variable/lexend';
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <!doctype html>
@@ -19,6 +20,7 @@ import '@fontsource-variable/lexend';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} {description}</title>
+		<ViewTransitions fallback='none'/>
 		
 	</head>
 	<body>

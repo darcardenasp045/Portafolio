@@ -1,0 +1,18 @@
+---
+import information from '../lib/informacionJson.json'
+import CardProyects from './../pages/CardProyects.astro';
+---
+<div class="grid p-10 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            
+    {information.map((info)=>(
+        info.portafolio.map((port)=>(
+        <CardProyects
+            proyecto={port.proyecto}
+            descripcion ={port.descripcion}
+            enlace={port.enlace}
+            imagen={port.imagen}
+            date={port.date}
+        />
+        ))
+    ))}
+</div>
