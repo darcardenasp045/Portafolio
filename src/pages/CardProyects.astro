@@ -4,29 +4,60 @@ interface Props{
     descripcion:string
     enlace:any
     imagen:string
+    date: string
 
 }
 
-const {proyecto,descripcion ,enlace, imagen} = Astro.props
+const {proyecto,descripcion ,enlace, imagen, date} = Astro.props
 
 
 
 ---
-<div  style={`background-image: url( ${imagen}); background-size: inherit; background-position: center;`}
-    class= "  justify-center rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:scale-105 hover:border-gray-500  flex flex-col p-4">
-    <a href={enlace}
-    class="bg-cover bg-center rounded-lg border shadow-md bg-opacity-50 bg-gray-400 border-gray-700  flex justify-center p-4"
-    target="_blank" 
-    rel="noopener noreferrer"
-    >
-    
-  
-        <h2 class="my-2 text-2xl font-bold tracking-tight text-gray-900">
-            {proyecto}
-        </h2>
-    
-        
-    </header>
 
-</a>
+<div>
+  
+    <div class=" mx-auto  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 sm:m-4 h-full">
+    <div class="grid gap-8 h-full">
+      <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm h-full">
+        <img src={imagen} class="object-cover w-full h-64" alt="" />
+        <div class="p-5 border border-t-0">
+          <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+            <a 
+                href={enlace} 
+                class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" 
+                aria-label="Category"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                title="traveling">Proyects</a>
+            <span 
+                class="text-gray-600">— {date}
+            </span>
+          </p>
+          <a 
+            href={enlace} 
+            aria-label="Category" 
+            title="Visit the East" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">{proyecto}
+        </a>
+          <p 
+            class="mb-2 text-gray-700">
+            {descripcion}
+          </p>
+          <a 
+            href={enlace} 
+            aria-label="" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+
+

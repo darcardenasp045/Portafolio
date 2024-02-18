@@ -63,13 +63,15 @@
       "proyecto": "Splendid Makeup",
       "descripcion": "Un sitio web de venta de maquillaje, donde te puedes registrar y comprar productos. ademas tienes la posibilidad de ver los productos en detalle, tener la opcion de un blog donde pudes ver tutoriales de maquillaje. Y referencias de los productos.",
       "enlace": "https://github.com/darcardenasp045/splendidMakeup",
-      "imagen":"https://i.postimg.cc/pLSvnn2G/proyecto1.png"
+      "imagen":"https://i.postimg.cc/pLSvnn2G/proyecto1.png",
+      "date": "2021-08-01"
     },
     {
       "proyecto": "Pokedex",
       "descripcion": "Una pokedex donde puedes ver los pokemones de la primera generacion, con sus respectivas caracteristicas y habilidades.",
       "enlace": "https://github.com/darcardenasp045/pokedex",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDvFi6ShsvC6mtFS7EkCmBOKeAZftxAs_tg&usqp=CAU"
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDvFi6ShsvC6mtFS7EkCmBOKeAZftxAs_tg&usqp=CAU",
+      "date": " 2021-08-01"
     }
   ]
 }

@@ -10,21 +10,32 @@ import { LINKS } from '../lib/constanst'
     title="Proyects - Daniel Cardenas "
 	description="All proyects">
     <main class="w-full h-full relative flex justify-center flex-col items-center">
-        
-       
+
         <div class="grid p-24 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             
             {information.map((info)=>(
                 info.portafolio.map((port)=>(
                 <CardProyects
-                  proyecto={port.proyecto}
-                  descripcion ={port.descripcion}
-                  enlace={port.enlace}
-                  imagen={port.imagen}
+                    proyecto={port.proyecto}
+                    descripcion ={port.descripcion}
+                    enlace={port.enlace}
+                    imagen={port.imagen}
+                    date={port.date}
                 />
                 ))
             ))}
-          </div>
+        </div>
     </main>
 
+    
+
 </Layout>
+
+<style>
+    .cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+</style>
