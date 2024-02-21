@@ -14,11 +14,7 @@ import Education from '../components/Education.astro';
 	description="Software developer with focus on the user experience animations and micro interactions"
 >
 	<main class="flex flex-row justify-center absolute">
-		<div class={`container
-			
-			
-			
-			`}>
+		<div class="container sm:h-auto ">
 			<main class="profile animate-fade-up animate-duration-1000 animate-delay-[800ms] " >
 				<Card>
 					<Profile/>
@@ -92,5 +88,12 @@ import Education from '../components/Education.astro';
 .Cities { grid-area: Cities; }
 
 .createdby { grid-area: createdby; }
+@media (max-width: 768px) {
+  .container {
+    display: block;
+	height: 90vh; /* Cambiar a un diseño de bloque en lugar de cuadrícula */
+  }
+}
+
 
 </style>
