@@ -72,6 +72,13 @@
       "enlace": "https://github.com/darcardenasp045/pokedex",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDvFi6ShsvC6mtFS7EkCmBOKeAZftxAs_tg&usqp=CAU",
       "date": " 2021-08-01"
+    },
+    {
+      "proyecto": "Tu | Pagina | Ya",
+      "descripcion": "Una landing page para una empresa de desarrollo web, donde puedes ver los servicios que ofrecen, y un formulario de contacto.",
+      "enlace": "https://landing-page-alpha.vercel.app/",
+      "imagen": "https://i.postimg.cc/k4x1mYFC/Tupaginaya.png",
+      "date": " 2024-03-11"
     }
   ]
 }
