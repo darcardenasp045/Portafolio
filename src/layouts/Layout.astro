@@ -23,8 +23,8 @@ import { ViewTransitions } from 'astro:transitions';
 		<ViewTransitions fallback='none'/>
 		
 	</head>
-	<body>
-		<main class="flex justify-center items-center w-full h-full absolute ">
+	<body class="flex justify-center items-center ">
+		<main class="max-w-[1300px]  p-4  ">
 			<slot />
 		</main>
 		
@@ -46,11 +46,9 @@ import { ViewTransitions } from 'astro:transitions';
 
 	
 	html {
-		width: auto;
-		height: auto;
 		font-family: 'Lexend Variable', sans-serif;
 		background: #101624;
-		background-size: 224px;
+
 		
 	}
 	code {
